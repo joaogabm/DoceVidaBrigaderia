@@ -1,0 +1,202 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Righteous&family=Sarala:wght@400;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+}
+
+body, html{
+    width: 100%;
+    background: linear-gradient(to right, #d7a2bb, #B56376);
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    scroll-padding-top: 10px;
+}
+
+header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+    border-bottom: 1px solid #FFF2E7;
+}
+
+nav a{
+    font-size: 1.2em;
+    font-family: 'Sarala', sans-serif;
+    text-decoration: none;
+    color: #FFF2E7;
+    font-weight: bolder;
+    padding: 30px;
+}
+
+nav a:hover{
+    text-decoration: underline;
+}
+
+section.principal{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    padding-top: 50px;
+    padding-bottom: 135px;
+}
+
+div.principal-escrito{
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+div.principal-escrito h1{
+    font-family: 'Righteous', cursive;
+    font-weight: 400;
+    font-size: 64px;
+    color: #FFF2E7;
+    padding-bottom: 0;
+    padding-left: 25px;
+}
+
+div.principal-escrito h2{
+    font-family: 'Sarala', sans-serif;
+    font-weight: 400;
+    font-size: 30px;
+    color: #FFF2E7;
+    padding-top: 0;
+    padding-left: 25px;
+}
+
+.pedido{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+    width: 280px;
+    border-radius: 15px;
+    margin: 5px 0 25px 20px;
+    font-family: 'Righteous', cursive;
+    background-color: #B56376;
+    color: #FFF2E7;
+    font-size: 1.3em;
+}
+
+.pedido:hover{
+    background-color: #FFF2E7;
+    color: #B56376;
+    transition: 0.35s ease-out;
+}
+
+.logo{
+    height: 380px;
+    padding-top: 10px;
+    border-radius: 50%;
+}
+
+section.secundario{
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    align-items: center;
+    margin-top: 48px;
+}
+
+section.secundario h2{
+    border-top: 0.4px solid #FFF2E7;
+    padding-top: 20px;
+    font-family: 'Righteous', cursive;
+    font-weight: 400;
+    font-size: 24px;
+    color: #FFF2EF;
+    margin-bottom: 17px;
+}
+
+section.secundario h3{
+    font-family: 'sarala', cursive;
+    font-weight: 400;
+    font-size: 20px;
+    color: #FFF2EF;
+}
+
+.doces-imagens{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.doces{
+    height: 350px;
+    padding-bottom: 30px;
+}
+
+.mais{
+    font-family:'Righteous', cursive;
+    color: #FFF2EF;
+    font-weight: 400;
+    padding: 0;
+}
+
+section.pedido-final{
+    text-align: center;
+    padding: 50px 0 80px 0;
+}
+
+section.pedido-final a{
+    font-family:'Righteous', cursive;
+    font-size: 1.1em;
+    background-color: #B56376;
+    color: #FFF2EF;
+    max-width: 350px;
+    margin: 0 auto;
+    border-radius: 10px;
+    padding: 15px;
+}
+
+section.pedido-final a:hover{
+    background-color: #FFF2EF;
+    color: #B56376;
+    transition: 0.35s ease-out;
+}
+
+footer{
+    padding: 25px;
+    border-top: 0.4px solid #FFF2E7;
+}
+
+footer p{
+    font-family: 'Righteous', cursive;
+    font-size: 1.5em;
+    text-align: center;
+}
+
+footer p a{
+    text-decoration: none;
+    color: white;
+}
+
+footer p a:hover{
+    text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+    body, html{
+        overflow-x: hidden;
+    }
+
+    section.principal{
+        padding-top: 30px;
+    }
+
+    .logo{
+        height: 330px;
+    }
+
+}
