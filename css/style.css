@@ -26,6 +26,14 @@ header{
     border-bottom: 1px solid #FFF2E7;
 }
 
+.mobile{
+    display: none;
+}
+
+.logo-mobile{
+    display: none;
+}
+
 nav a{
     font-size: 1.2em;
     font-family: 'Sarala', sans-serif;
@@ -92,7 +100,7 @@ div.principal-escrito h2{
     transition: 0.35s ease-out;
 }
 
-.logo{
+.logo-pc{
     height: 380px;
     padding-top: 10px;
     border-radius: 50%;
@@ -193,10 +201,51 @@ footer p a:hover{
 
     section.principal{
         padding-top: 30px;
+        padding-bottom: 10px;
     }
 
     .logo{
         height: 330px;
+    }
+
+    header{
+        padding: 10px;
+    }
+
+    nav.pc{
+        display: none;
+    }
+
+    nav.mobile{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    nav.mobile a{
+        display: flex;
+        flex-direction: row;
+        padding: 5px;
+        margin: 0;
+        font-size: 0.94em;
+        padding: 8px;
+
+    }
+
+    .logo-mobile{
+        display: block;
+        height: 115px;
+        border-radius: 50%;
+    }
+
+    #nos{
+        padding-left: 15px;
+        border-right: 0.5px solid #FFF2E7;
+    }
+
+    .logo-pc{
+        display: none;
     }
 
 }
