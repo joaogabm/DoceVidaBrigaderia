@@ -15,7 +15,7 @@ body, html{
     background: linear-gradient(to right, #d7a2bb, #B56376);
     overflow-x: hidden;
     scroll-behavior: smooth;
-    scroll-padding-top: 10px;
+    scroll-padding-top: 20px;
 }
 
 header{
@@ -24,13 +24,11 @@ header{
     align-items: center;
     padding: 50px;
     border-bottom: 1px solid #FFF2E7;
+    position: relative;
+    background: linear-gradient(to right, #d7a2bb, #B56376);
 }
 
 .mobile{
-    display: none;
-}
-
-.logo-mobile{
     display: none;
 }
 
@@ -47,7 +45,7 @@ nav a:hover{
     text-decoration: underline;
 }
 
-section.principal{
+section.home{
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -56,13 +54,13 @@ section.principal{
     padding-bottom: 135px;
 }
 
-div.principal-escrito{
+div.home-escrito{
     display: flex;
     flex-direction: column;
     gap: 25px;
 }
 
-div.principal-escrito h1{
+div.home-escrito h1{
     font-family: 'Righteous', cursive;
     font-weight: 400;
     font-size: 64px;
@@ -71,7 +69,7 @@ div.principal-escrito h1{
     padding-left: 25px;
 }
 
-div.principal-escrito h2{
+div.home-escrito h2{
     font-family: 'Sarala', sans-serif;
     font-weight: 400;
     font-size: 30px;
@@ -100,13 +98,49 @@ div.principal-escrito h2{
     transition: 0.35s ease-out;
 }
 
-.logo-pc{
+.logo{
     height: 380px;
     padding-top: 10px;
     border-radius: 50%;
 }
 
-section.secundario{
+section.sobre{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    max-width: 768px;
+    margin: 0 auto;
+}
+
+section.sobre h2{
+    border-top: 0.4px solid #FFF2E7;
+    padding-top: 10px;
+    font-family: 'Righteous', cursive;
+    font-weight: 400;
+    font-size: 24px;
+    color: #FFF2EF;
+    margin-bottom: 17px;
+    margin-top: 52px;
+}
+
+section.sobre p{
+    font-family: 'sarala', cursive;
+    font-weight: 400;
+    font-size: 20px;
+    color: #FFF2EF;
+    text-indent: 20px;
+    text-align: justify;
+    padding: 10px;
+}
+
+#top{
+    padding: 50px 0 15px 0;
+    font-size: 22px;
+}
+
+section.catalogo{
     display: flex;
     flex-direction: column;
     gap: 24px;
@@ -114,9 +148,9 @@ section.secundario{
     margin-top: 48px;
 }
 
-section.secundario h2{
+section.catalogo h2{
     border-top: 0.4px solid #FFF2E7;
-    padding-top: 20px;
+    padding-top: 10px;
     font-family: 'Righteous', cursive;
     font-weight: 400;
     font-size: 24px;
@@ -124,7 +158,7 @@ section.secundario h2{
     margin-bottom: 17px;
 }
 
-section.secundario h3{
+section.catalogo h3{
     font-family: 'sarala', cursive;
     font-weight: 400;
     font-size: 20px;
@@ -199,7 +233,7 @@ footer p a:hover{
         overflow-x: hidden;
     }
 
-    section.principal{
+    section.home{
         padding-top: 30px;
         padding-bottom: 10px;
     }
@@ -228,15 +262,12 @@ footer p a:hover{
         flex-direction: row;
         padding: 5px;
         margin: 0;
-        font-size: 0.94em;
-        padding: 8px;
-
+        font-size: 1em;
+        padding: 15px;
     }
 
-    .logo-mobile{
-        display: block;
-        height: 115px;
-        border-radius: 50%;
+    .logo{
+        height: 320px;
     }
 
     #nos{
@@ -244,8 +275,29 @@ footer p a:hover{
         border-right: 0.5px solid #FFF2E7;
     }
 
-    .logo-pc{
-        display: none;
+    section.sobre h2{
+        border-top: 0.4px solid #FFF2E7;
+        padding-top: 10px;
+        font-family: 'Righteous', cursive;
+        font-weight: 400;
+        font-size: 24px;
+        color: #FFF2EF;
+        margin-bottom: 17px;
+    }
+
+    section.sobre p{
+        font-family: 'sarala', cursive;
+        font-weight: 400;
+        font-size: 18px;
+        color: #FFF2EF;
+        text-indent: 20px;
+        text-align: justify;
+        padding: 15px;
+    }
+
+    #top{
+        padding: 30px 0 10px 0;
+        font-size: 20px;
     }
 
 }
